@@ -1,37 +1,45 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Market_Box.css';
 import Item_Box from './Item_Box';
 
 
 class Title_Box extends Component{
+  static propTypes={
+    title: PropTypes.string.isRequired,
+    info: PropTypes.string.isRequired,
+  }
+
   render(){
       return(
           <div className="Item_Box title">
-              <p>@sarah_x_life</p>
+              <p className="bold">@{this.props.title}</p>
+              <p>{this.props.info}</p>
           </div>
       )
   }
 }
 
 class Market_Box extends Component {
+  static propTypes={
+    title: PropTypes.string.isRequired,
+    info: PropTypes.string.isRequired,
+    pics: PropTypes.array.isRequired
+  }
 
   constructor(props){
     super(props);
     this.state={
-      items:[
-        "https://mblogthumb-phinf.pstatic.net/MjAxODA3MTdfMjM1/MDAxNTMxODA5MTU0NzM4.WgjYbuivSZXGtAmHKX-_O5s_G6-bErSNgNeu-VqcC7Qg.GwywpHsOCTltUORKJIM8WqatLigx5oDxfRMKccyN5DIg.JPEG.1_2_3_4_9/NaverBlog_20180717_153234_01.jpg?type=w800",
-        "https://mblogthumb-phinf.pstatic.net/MjAxODA3MTdfMjk5/MDAxNTMxODA5MTYwMjcz.xftTA2dEl9aGNifA1cU7f3iy4qEV4u9noqkwxArhUHcg.ko3qaVx56PEkrdtv4uVGsEyY0c3JmPvfIOfTSa9h7ekg.JPEG.1_2_3_4_9/NaverBlog_20180717_153240_09.jpg?type=w800",
-        "https://mblogthumb-phinf.pstatic.net/MjAxODA3MTdfOTQg/MDAxNTMxODEzNzUwNjI0.DVicTYwiHHHf_aUjpaWG3VgphNiYuj6jTBX4FKN5C1sg.p-qkoIB8_bVUrWv9P4bdxd7d2Lwijo4B2B-toEm5II4g.JPEG.1_2_3_4_9/4F0A8824-F086-4B56-8E85-79DF60E8D857-396-00000016038DCD78.jpg?type=w800"
-      ]
+
     }
   }
 
   render() {
     return (
       <div className="Market_Box">
-        <Title_Box/>
-        {this.state.items.map((items, index)=>{
-          return <Item_Box photo={items} key={index} />
+        <Title_Box title={this.props.title} info={this.props.info}/>
+        {this.props.pics.map((pics, index)=>{
+          return <Item_Box photo={pics} key={index} />
         })}
       </div>
     );
