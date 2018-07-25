@@ -1,0 +1,11 @@
+.Market_Box{
+    /*background-color: red;*/
+    width:100%;
+    display:inline-block;
+    margin: 1rem 0;
+}
+
+.title{
+    font-size:3vw;
+}
+
