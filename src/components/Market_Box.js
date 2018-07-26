@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './Market_Box.css';
 import Item_Box from './Item_Box';
-
 
 class Title_Box extends Component{
   static propTypes={
@@ -13,8 +13,9 @@ class Title_Box extends Component{
   render(){
       return(
           <div className="Item_Box">
-              <p className="title">@{this.props.title}</p>
-              <p>{this.props.info}</p>
+              <p className="title">{this.props.title}</p>
+              <p>{this.props.info}</p><br/>
+              <Link to={this.props.title}>link</Link>
           </div>
       )
   }
