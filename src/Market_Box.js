@@ -12,8 +12,8 @@ class Title_Box extends Component{
 
   render(){
       return(
-          <div className="Item_Box title">
-              <p className="bold">@{this.props.title}</p>
+          <div className="Item_Box">
+              <p className="title">@{this.props.title}</p>
               <p>{this.props.info}</p>
           </div>
       )
@@ -25,13 +25,6 @@ class Market_Box extends Component {
     title: PropTypes.string.isRequired,
     info: PropTypes.string.isRequired,
     pics: PropTypes.array.isRequired
-  }
-
-  constructor(props){
-    super(props);
-    this.state={
-
-    }
   }
 
   render() {

@@ -16,6 +16,4 @@ class Item_Box extends Component {
   }
 }
 
-
-
 export default Item_Box;
