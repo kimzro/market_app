@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import './main_Body.css';
 import Market_Box from './Market_Box';
 

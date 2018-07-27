@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Item_Box.css';
 
+
 class Item_Box extends Component {
     static propTypes={
         photo: PropTypes.string.isRequired

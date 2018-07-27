@@ -4,7 +4,7 @@ import './App.css';
 import Header from 'components/Header';
 import main_Body from 'components/main_Body';
 import lalastudio from 'pages/lalastudio';
-
+import 'semantic-ui-css/semantic.min.css';
 class App extends Component {
   render() {
     return (

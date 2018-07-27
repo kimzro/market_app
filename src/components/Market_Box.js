@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './Market_Box.css';
 import Item_Box from './Item_Box';
 
+
 class Title_Box extends Component{
   static propTypes={
     title: PropTypes.string.isRequired,
