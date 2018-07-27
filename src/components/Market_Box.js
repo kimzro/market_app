@@ -34,7 +34,7 @@ class Market_Box extends Component {
       <div className="Market_Box">
         <Title_Box title={this.props.title} info={this.props.info}/>
         {this.props.pics.map((pics, index)=>{
-          return <Item_Box photo={pics} key={index} />
+          return Item_Box(pics);
         })}
       </div>
     );
