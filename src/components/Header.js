@@ -5,7 +5,7 @@ class Header extends Component{
     render(){
         return(
             <div className="Header">
-                <span className="logo">Insta Market</span>
+                <span className="logo">Zarket</span>
             </div>
         )
     }
