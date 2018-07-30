@@ -3,15 +3,15 @@ import {Route} from 'react-router-dom';
 import './App.css';
 import Header from 'components/Header';
 import main_Body from 'components/main_Body';
-import lalastudio from 'pages/lalastudio';
-import 'semantic-ui-css/semantic.min.css';
+import Lalastudio from 'pages/lalastudio/lalastudio';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
         <Route exact path="/" component={main_Body}/>
-        <Route exact path="/lalastudio" component={lalastudio}/>
+        <Route exact path="/lalastudio" component={Lalastudio}/>
       </div>
     );
   }
