@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Lalastudio_Home(){
+function Lalastudio_About(){
     return(
         <div className="wide_Box">
             <img src="https://mblogthumb-phinf.pstatic.net/MjAxODA3MDVfMjky/MDAxNTMwNzgzMjE0NDg3.7NrYq1bypQTKAIBEl3W5dW9QNVLJTNPnVS-_a7nEAzEg.GrCBbV-YwdefZnGdeoptnVzaXUMtf_KzF86OmP-cHuUg.JPEG.1_2_3_4_9/31D26FA1-1F49-40AF-A992-CBE3AC4F2866.jpeg?type=w2"/>
@@ -84,4 +84,4 @@ function Lalastudio_Home(){
     )
 }
 
-export default Lalastudio_Home;
+export default Lalastudio_About;

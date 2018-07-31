@@ -12,4 +12,12 @@
     font-size: 4vw;
     position: relative;
     float:left;
-  }
+}
+
+.menu_Box{
+    position: relative;
+    float: right;
+    font-size:2vw;
+    top:2vw;
+    margin-right:5%;
+}
