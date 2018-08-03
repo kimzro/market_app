@@ -19,28 +19,16 @@ export default class Lalastudio_Header extends React.Component {
     render() {
       const { open } = this.state;
       return (
-        <div className="example">
+        <div>
             lalastudio
-            <table className="menu_Box">
-                <tr>
-                    <td>
-                        <button className="btn" onClick={this.onOpenModal}>
-                            About
-                        </button>
-                        <Modal open={open} onClose={this.onCloseModal}>
-                            {Lalastudio_About()}
-                        </Modal>
-                    </td>
-                    <td>
-                        <button className="btn" onClick={this.onOpenModal}>
-                            Order
-                        </button>
-                        <Modal open={open} onClose={this.onCloseModal}>
-                            {Lalastudio_About()}
-                        </Modal>
-                    </td>
-                </tr>
-            </table>
+            <div className="menu_Box">
+                <button className="btn" onClick={this.onOpenModal}>
+                    About / Order
+                </button>
+                <Modal open={open} onClose={this.onCloseModal}>
+                    {Lalastudio_About()}
+                </Modal>
+            </div>
         </div>
       );
     }

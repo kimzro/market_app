@@ -27,10 +27,9 @@
 
 .menu_Box{
   position: relative;
-  float: right;
-
-  top:30%;
-  margin-right:20%;
+  float:right;
+  margin-top:1%;
+  margin-right:25%;
 }
 
 .btn {

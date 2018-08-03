@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Modal from 'react-responsive-modal';
 
 export default class Indiv_Item_Box extends Component{
     static propTypes={
