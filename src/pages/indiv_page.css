@@ -5,13 +5,12 @@
   }
 
 .wide_Box{
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 8%;
+  margin-right: 8%;
   margin-top: 7vw;
   margin-bottom: 1rem;
-  width:70%;
+  width:84%;
   font-size:1.1vw;
-
 }
 
 .indiv_header{
@@ -49,4 +48,15 @@
   float:left;
   width:30%;
   margin-left: 3%;
+  margin-bottom: 3%;
+}
+
+.red{
+  color:red;
+}
+.center{
+  text-align: center
+}
+.line_through{
+  text-decoration: line-through;
 }
