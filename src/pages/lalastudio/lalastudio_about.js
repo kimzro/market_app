@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 function Lalastudio_About(){
     return(
         <div className="wide_Box">
             <img src="https://mblogthumb-phinf.pstatic.net/MjAxODA3MDVfMjky/MDAxNTMwNzgzMjE0NDg3.7NrYq1bypQTKAIBEl3W5dW9QNVLJTNPnVS-_a7nEAzEg.GrCBbV-YwdefZnGdeoptnVzaXUMtf_KzF86OmP-cHuUg.JPEG.1_2_3_4_9/31D26FA1-1F49-40AF-A992-CBE3AC4F2866.jpeg?type=w2"/>
+            <p>
             Lala studio 5차 Market open!
             <br/>
             안녕하세요! 라라스튜디오에요 :) 
@@ -80,8 +81,10 @@ function Lalastudio_About(){
             <br/>
             <br/>
             <span style={{color:'red'}}>6만원이상 구매시 무료배송</span> 
+            </p>
         </div>
     )
+
 }
 
 export default Lalastudio_About;

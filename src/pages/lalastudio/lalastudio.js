@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-router-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Big from '../modal_test';
-import Lalastudio_About from './lalastudio_about';
 import Lalastudio_Shop from './lalastudio_shop';
+import Lalastudio_Header from './lalastudio_header';
 import '../indiv_page.css';
 
-class Lalastudio extends Component{
+class Lalastudio extends Component{    
+    state={
+        title:"lalastudio"
+    }
+
     render(){
         return(
             <div className="indiv_page">
-                <Route exact path='/lalastudio' component={Lalastudio_About} />
-                <Route path={'${match.url}/shop'} component={Lalastudio_Shop} />
-                <Big/>
+                <div className="indiv_header">
+                <Lalastudio_Header/>
+                </div>
+                <Lalastudio_Shop />                
             </div>
         )
     }

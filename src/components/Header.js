@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom';
+
 
 class Header extends Component{
-    constructor(props){
-        super(props);
-        this.state={
-            market_title:""
-        }
+    state={
+        title:""
     }
     changeTitle(t){
         this.setState({market_title:t});
@@ -15,10 +12,8 @@ class Header extends Component{
     render(){
         return(
             <div className="Header">
-                <span className="logo">Zarket</span>
-                    {menu_Box("order")}
-                    {menu_Box("Shop")}
-                    {menu_Box("About")}
+                <a href={"http://localhost:3000"} className="logo">Zarket:</a>
+
             </div>
         )
     }
